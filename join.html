@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PlanB — Gruppe beitreten</title>
+<style>
+  :root {
+    --bg: #f6f6f4; --surface: #fff; --text: #14141a; --muted: #5c5c66;
+    --border: #e3e3df; --accent: #1b6b4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0f12; --surface: #17191d; --text: #f3f4f2; --muted: #a8adb4;
+      --border: #2b2f35; --accent: #4ecb8c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 80px; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 8px; }
+  .updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 32px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 20px 22px; margin: 20px 0;
+  }
+  .headline { font-size: 1.05rem; font-weight: 600; margin: 0 0 6px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  code { background: var(--bg); padding: 1px 5px; border-radius: 5px; font-size: 0.88em; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+  .lang-note { color: var(--muted); font-size: 0.85rem; margin-bottom: 28px; }
+  .wrap { overflow-x: auto; }
+</style>
+<style>
+  /* The shared policy stylesheet has no button; this page is the only one that
+     needs one, so it is defined here rather than bloating the shared sheet. */
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: #1B6B4A;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    .btn { background: #4ECB8C; color: #08130D; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>PlanB — Gruppe beitreten</h1>
+<p class="lede" id="groupname">&nbsp;</p>
+
+<div class="card">
+  <p class="headline">Weiterleitung in die App&hellip;</p>
+  <p style="margin:0">
+    Wenn sich PlanB nicht von selbst öffnet, tipp auf den Knopf.
+  </p>
+</div>
+
+<p style="margin:28px 0">
+  <a id="open" class="btn" href="#">In PlanB öffnen</a>
+</p>
+
+<h2>App noch nicht installiert?</h2>
+<p>
+  Installier PlanB aus dem Google Play Store und öffne diesen Link danach noch einmal.
+  Der Einladungscode steht unten — du kannst ihn auch in der App unter
+  <strong>Gruppen &rarr; Gruppe beitreten</strong> eingeben.
+</p>
+<p>Einladungscode: <strong id="code" style="letter-spacing:3px">—</strong></p>
+
+<p style="margin-top:40px"><a href="index.html">Datenschutzerklärung</a></p>
+
+<script>
+  // Everything needed is in the query string: the app cannot be asked about a
+  // group you are not yet a member of, so this page only forwards the invite.
+  var q = new URLSearchParams(location.search);
+  var g = q.get('g'), c = q.get('c'), n = q.get('n') || '';
+
+  if (n) document.getElementById('groupname').textContent = n;
+  if (c) document.getElementById('code').textContent = c;
+
+  if (g && c) {
+    var deep = 'planb://join?g=' + encodeURIComponent(g) +
+               '&c=' + encodeURIComponent(c) +
+               '&n=' + encodeURIComponent(n);
+    document.getElementById('open').setAttribute('href', deep);
+    // Auto-open once. Browsers ignore this without a gesture on some platforms,
+    // which is exactly why the button above stays visible either way.
+    location.replace(deep);
+  } else {
+    document.getElementById('groupname').textContent =
+      'Dieser Link ist unvollständig.';
+    document.getElementById('open').style.display = 'none';
+  }
+</script>
+
+</main>
+</body>
+</html>

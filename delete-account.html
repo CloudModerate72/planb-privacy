@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PlanB — Konto löschen / Delete account</title>
+<style>
+  :root {
+    --bg: #f6f6f4; --surface: #fff; --text: #14141a; --muted: #5c5c66;
+    --border: #e3e3df; --accent: #1b6b4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0f12; --surface: #17191d; --text: #f3f4f2; --muted: #a8adb4;
+      --border: #2b2f35; --accent: #4ecb8c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 80px; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 8px; }
+  .updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 32px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 20px 22px; margin: 20px 0;
+  }
+  .headline { font-size: 1.05rem; font-weight: 600; margin: 0 0 6px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  code { background: var(--bg); padding: 1px 5px; border-radius: 5px; font-size: 0.88em; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+  .lang-note { color: var(--muted); font-size: 0.85rem; margin-bottom: 28px; }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>PlanB — Konto löschen</h1>
+<p class="lede">Everpath Digital &middot; ch.everpathdigital.planb</p>
+<p class="lang-note">English version: <a href="#en">below</a>.</p>
+
+<div class="card">
+  <p class="headline">Am schnellsten geht es in der App</p>
+  <p style="margin:0">
+    <strong>Profil &rarr; Konto &rarr; Konto löschen</strong>. Die Löschung erfolgt sofort
+    und ist endgültig — es gibt keine Wartefrist und keine Wiederherstellung.
+  </p>
+</div>
+
+<h2>Ohne die App löschen lassen</h2>
+<p>
+  Hast du keinen Zugriff mehr auf die App, schick eine E-Mail an
+  <a href="mailto:support@everpath-digital.ch?subject=PlanB%20Konto%20l%C3%B6schen">support@everpath-digital.ch</a>
+  mit dem Betreff <strong>„PlanB Konto löschen"</strong> und der E-Mail-Adresse, mit der
+  das Konto angelegt wurde. Wir bestätigen die Löschung innerhalb von 30 Tagen.
+</p>
+
+<h2>Was gelöscht wird</h2>
+<ul>
+  <li>Dein Anmeldekonto samt E-Mail-Adresse und Passwort-Hash</li>
+  <li>Dein Anzeigename</li>
+  <li>Deine Mitgliedschaften in allen Gruppen und die dort gesetzten Vorlieben</li>
+</ul>
+
+<h2>Was nicht gelöscht wird</h2>
+<ul>
+  <li>
+    <strong>Deine Pläne.</strong> Die liegen ausschliesslich auf deinem Gerät und werden
+    nie zu uns übertragen. Entfernen kannst du sie über <strong>Profil &rarr; App
+    zurücksetzen</strong> oder durch Deinstallieren.
+  </li>
+  <li>
+    <strong>Gruppen, in denen noch andere Personen sind.</strong> Die bleiben für diese
+    bestehen; nur deine Mitgliedschaft verschwindet. Eine Gruppe, in der niemand mehr
+    ist, wird nicht mehr angezeigt.
+  </li>
+</ul>
+
+<h2>Aufbewahrung</h2>
+<p>
+  Es gibt keine Aufbewahrungsfrist: Die Daten werden beim Löschen entfernt, nicht
+  archiviert. Technische Sicherungskopien unseres Anbieters (Google Firebase) laufen
+  innerhalb von 30 Tagen aus.
+</p>
+
+<hr style="margin:48px 0; border:none; border-top:1px solid var(--border)" />
+
+<h1 id="en">PlanB — Delete your account</h1>
+<p class="lede">Everpath Digital &middot; ch.everpathdigital.planb</p>
+
+<div class="card">
+  <p class="headline">Fastest route: in the app</p>
+  <p style="margin:0">
+    <strong>Profile &rarr; Account &rarr; Delete account</strong>. Deletion is immediate
+    and permanent — there is no grace period and no recovery.
+  </p>
+</div>
+
+<h2>Requesting deletion without the app</h2>
+<p>
+  If you can no longer open the app, email
+  <a href="mailto:support@everpath-digital.ch?subject=PlanB%20delete%20account">support@everpath-digital.ch</a>
+  with the subject <strong>&ldquo;PlanB delete account&rdquo;</strong> and the address the
+  account was created with. We confirm deletion within 30 days.
+</p>
+
+<h2>What is deleted</h2>
+<ul>
+  <li>Your sign-in account, including the email address and password hash</li>
+  <li>Your display name</li>
+  <li>Your membership of every group, and the preferences you set in them</li>
+</ul>
+
+<h2>What is not deleted</h2>
+<ul>
+  <li>
+    <strong>Your plans.</strong> They live only on your device and are never sent to us.
+    Remove them with <strong>Profile &rarr; Reset app</strong>, or by uninstalling.
+  </li>
+  <li>
+    <strong>Groups that still have other people in them.</strong> Those continue to exist
+    for them; only your membership goes.
+  </li>
+</ul>
+
+<h2>Retention</h2>
+<p>
+  There is no retention period: data is removed on deletion, not archived. Technical
+  backups held by our provider (Google Firebase) expire within 30 days.
+</p>
+
+<p style="margin-top:40px"><a href="index.html">&larr; Datenschutzerklärung / Privacy policy</a></p>
+
+</main>
+</body>
+</html>
