@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PlanB — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f6f6f4; --surface: #fff; --text: #14141a; --muted: #5c5c66;
+    --border: #e3e3df; --accent: #1b6b4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0f12; --surface: #17191d; --text: #f3f4f2; --muted: #a8adb4;
+      --border: #2b2f35; --accent: #4ecb8c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 80px; background: var(--bg); color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 8px; }
+  .updated { color: var(--muted); font-size: 0.85rem; margin: 0 0 32px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 20px 22px; margin: 20px 0;
+  }
+  .headline { font-size: 1.05rem; font-weight: 600; margin: 0 0 6px; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  code { background: var(--bg); padding: 1px 5px; border-radius: 5px; font-size: 0.88em; }
+  ul { padding-left: 20px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+  .lang-note { color: var(--muted); font-size: 0.85rem; margin-bottom: 28px; }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>PlanB — Privacy Policy</h1>
+<p class="lede">Everpath Digital</p>
+<p class="updated">Last updated: 9 September 2026 &middot; Version 1.0</p>
+<p class="lang-note">Deutsche Fassung: <a href="#de">weiter unten</a>.</p>
+
+<div class="card">
+  <p class="headline">The short version</p>
+  <p style="margin:0">
+    PlanB has no user accounts and no servers of its own. Your plans, groups and
+    preferences are stored only on your device. We do not collect, transmit or
+    sell personal data, and there is no analytics or advertising SDK in the app.
+  </p>
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>
+  Everpath Digital is the provider of the PlanB mobile application. Questions about
+  this policy can be sent to the contact address in the Google Play listing.
+</p>
+
+<h2>2. What PlanB stores, and where</h2>
+<p>
+  All of the following is written to your device's local application storage. None
+  of it is uploaded anywhere by default:
+</p>
+<ul>
+  <li>Your display name and the interests you optionally select</li>
+  <li>Plans you create: title, activity, location, date and time, headcount, budget</li>
+  <li>Groups you create or join, and the preferences you set within them</li>
+  <li>Favourites, plan history and locally generated notifications</li>
+  <li>A small activity-preference profile derived from suggestions you accept or reject</li>
+</ul>
+<p>
+  Uninstalling the app deletes all of it. You can also erase everything at any time
+  under <strong>Profile → Reset app</strong>.
+</p>
+
+<h2>3. Location</h2>
+<p>
+  PlanB asks for location access only to centre suggestions near you and estimate
+  travel times. The permission is optional and the app is fully usable without it —
+  you can type a place name instead. Your coordinates are used on the device and
+  sent to the mapping and weather services listed below only as a rounded
+  coordinate pair, in order to look up a forecast or nearby venues. They are never
+  stored on a server by us and never tied to an identity.
+</p>
+
+<h2>4. Third-party services PlanB queries</h2>
+<p>
+  To check weather, find real venues and estimate journeys, the app makes requests
+  to the following free, public services. Each request contains a coordinate or a
+  place name and your device's IP address, as any web request does. No account
+  identifier, name or plan title is ever sent.
+</p>
+<div class="wrap">
+<table>
+  <tr><th>Service</th><th>Purpose</th><th>Provider policy</th></tr>
+  <tr>
+    <td>Open-Meteo</td>
+    <td>Weather forecast for a coordinate</td>
+    <td><a href="https://open-meteo.com/en/terms">open-meteo.com/en/terms</a></td>
+  </tr>
+  <tr>
+    <td>OpenStreetMap Overpass</td>
+    <td>Finding real venues near a coordinate</td>
+    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org</a></td>
+  </tr>
+  <tr>
+    <td>Nominatim (OpenStreetMap)</td>
+    <td>Turning place names into coordinates and back</td>
+    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org</a></td>
+  </tr>
+  <tr>
+    <td>OSRM</td>
+    <td>Driving, cycling and walking times</td>
+    <td><a href="https://project-osrm.org/">project-osrm.org</a></td>
+  </tr>
+  <tr>
+    <td>transport.opendata.ch</td>
+    <td>Swiss public transport connections</td>
+    <td><a href="https://transport.opendata.ch/">transport.opendata.ch</a></td>
+  </tr>
+  <tr>
+    <td>CARTO / OpenStreetMap tiles</td>
+    <td>Map background images</td>
+    <td><a href="https://carto.com/privacy/">carto.com/privacy</a></td>
+  </tr>
+</table>
+</div>
+<p>
+  These providers may log request metadata such as IP address for abuse prevention,
+  under their own policies linked above. PlanB caches their responses on your device
+  to keep the number of requests low.
+</p>
+
+<h2>5. What PlanB does not do</h2>
+<ul>
+  <li>No user accounts, no sign-in, no email address collected</li>
+  <li>No analytics, crash-reporting or advertising SDKs</li>
+  <li>No tracking across apps or websites, and no advertising identifier is read</li>
+  <li>No sale or sharing of personal data with anyone</li>
+  <li>No access to contacts, photos, microphone or files</li>
+</ul>
+
+<h2>6. Notifications</h2>
+<p>
+  Plan alerts are generated and scheduled on your device from data the app has
+  already fetched. There is no push server, so no notification content leaves your
+  phone. The permission is optional.
+</p>
+
+<h2>7. Optional cloud sync</h2>
+<p>
+  A future version may offer opt-in sync so a group can share plans across devices.
+  It is switched off, and this policy will be updated before any such feature is
+  released. Until then, no plan data leaves your device.
+</p>
+
+<h2>8. Children</h2>
+<p>
+  PlanB is a general-audience leisure planning tool and is not directed at children
+  under 13. It collects no personal data from anyone, including children.
+</p>
+
+<h2>9. Your rights</h2>
+<p>
+  Because PlanB holds no data about you on any server, there is nothing for us to
+  export, correct or delete on request. All data lives on your device and is under
+  your direct control: <strong>Profile → Reset app</strong> erases it, and
+  uninstalling the app removes it entirely. Where the GDPR or the Swiss FADP grants
+  you rights of access, rectification or erasure, they are satisfied by that local
+  control.
+</p>
+
+<h2>10. Changes</h2>
+<p>
+  If this policy changes, the version and date at the top of this page are updated,
+  and material changes will be noted in the app's release notes.
+</p>
+
+<hr style="margin:48px 0; border:none; border-top:1px solid var(--border)" />
+
+<h1 id="de">PlanB — Datenschutzerklärung</h1>
+<p class="lede">Everpath Digital</p>
+<p class="updated">Stand: 9. September 2026 &middot; Version 1.0</p>
+
+<div class="card">
+  <p class="headline">Kurzfassung</p>
+  <p style="margin:0">
+    PlanB hat keine Benutzerkonten und keine eigenen Server. Deine Pläne, Gruppen und
+    Einstellungen werden ausschliesslich auf deinem Gerät gespeichert. Wir erheben,
+    übertragen oder verkaufen keine personenbezogenen Daten. Die App enthält kein
+    Analyse- und kein Werbe-SDK.
+  </p>
+</div>
+
+<h2>1. Verantwortlich</h2>
+<p>
+  Everpath Digital ist Anbieterin der mobilen Anwendung PlanB. Fragen zu dieser
+  Erklärung richtest du an die im Google-Play-Eintrag angegebene Kontaktadresse.
+</p>
+
+<h2>2. Was PlanB speichert — und wo</h2>
+<p>Alles Folgende wird lokal auf deinem Gerät abgelegt und standardmässig nirgendwohin übertragen:</p>
+<ul>
+  <li>Dein Anzeigename und die optional gewählten Interessen</li>
+  <li>Deine Pläne: Titel, Aktivität, Ort, Datum und Zeit, Personenzahl, Budget</li>
+  <li>Gruppen, die du erstellst oder denen du beitrittst, samt deiner Präferenzen darin</li>
+  <li>Favoriten, Plan-Historie und lokal erzeugte Benachrichtigungen</li>
+  <li>Ein kleines Präferenzprofil aus angenommenen bzw. abgelehnten Vorschlägen</li>
+</ul>
+<p>
+  Beim Deinstallieren wird alles gelöscht. Du kannst jederzeit selbst löschen unter
+  <strong>Profil → App zurücksetzen</strong>.
+</p>
+
+<h2>3. Standort</h2>
+<p>
+  PlanB fragt den Standort nur ab, um Vorschläge in deiner Nähe zu zentrieren und
+  Anreisezeiten zu schätzen. Die Berechtigung ist freiwillig; die App ist ohne sie
+  vollständig nutzbar — du kannst stattdessen einen Ortsnamen eingeben. Deine
+  Koordinaten werden auf dem Gerät verwendet und an die unten genannten Karten- und
+  Wetterdienste nur als gerundetes Koordinatenpaar übermittelt, um eine Prognose oder
+  Orte in der Nähe abzufragen. Wir speichern sie auf keinem Server und verknüpfen sie
+  mit keiner Identität.
+</p>
+
+<h2>4. Genutzte Drittdienste</h2>
+<p>
+  Für Wetter, echte Orte und Reisezeiten fragt die App die in der englischen Tabelle
+  oben gelisteten kostenlosen, öffentlichen Dienste ab (Open-Meteo, OpenStreetMap
+  Overpass, Nominatim, OSRM, transport.opendata.ch, CARTO-Kartenkacheln). Jede Anfrage
+  enthält eine Koordinate oder einen Ortsnamen sowie — wie bei jeder Webanfrage — die
+  IP-Adresse deines Geräts. Es werden keine Kennungen, Namen oder Plantitel übertragen.
+  Die Anbieter können Anfrage-Metadaten zur Missbrauchsabwehr protokollieren; es gelten
+  deren verlinkte Richtlinien. PlanB speichert Antworten lokal zwischen, um die Zahl der
+  Anfragen gering zu halten.
+</p>
+
+<h2>5. Was PlanB nicht tut</h2>
+<ul>
+  <li>Keine Benutzerkonten, kein Login, keine E-Mail-Adresse</li>
+  <li>Keine Analyse-, Absturz- oder Werbe-SDKs</li>
+  <li>Kein App- oder websiteübergreifendes Tracking, keine Werbe-ID</li>
+  <li>Kein Verkauf und keine Weitergabe personenbezogener Daten</li>
+  <li>Kein Zugriff auf Kontakte, Fotos, Mikrofon oder Dateien</li>
+</ul>
+
+<h2>6. Benachrichtigungen</h2>
+<p>
+  Plan-Hinweise werden auf dem Gerät aus bereits abgerufenen Daten erzeugt und geplant.
+  Es gibt keinen Push-Server, folglich verlässt kein Benachrichtigungsinhalt dein
+  Telefon. Die Berechtigung ist freiwillig.
+</p>
+
+<h2>7. Optionale Cloud-Synchronisation</h2>
+<p>
+  Eine künftige Version kann eine ausdrücklich zu aktivierende Synchronisation anbieten,
+  damit Gruppen Pläne geräteübergreifend teilen können. Sie ist deaktiviert; vor einer
+  Veröffentlichung wird diese Erklärung aktualisiert. Bis dahin verlassen keine Plandaten
+  dein Gerät.
+</p>
+
+<h2>8. Kinder</h2>
+<p>
+  PlanB richtet sich an ein allgemeines Publikum und nicht an Kinder unter 13 Jahren.
+  Es werden von niemandem personenbezogene Daten erhoben.
+</p>
+
+<h2>9. Deine Rechte</h2>
+<p>
+  Da PlanB keine Daten über dich auf einem Server hält, gibt es nichts, was wir auf
+  Anfrage exportieren, berichtigen oder löschen könnten. Alle Daten liegen auf deinem
+  Gerät und stehen unter deiner direkten Kontrolle: <strong>Profil → App zurücksetzen</strong>
+  löscht sie, das Deinstallieren entfernt sie vollständig. Soweit DSGVO oder das Schweizer
+  DSG dir Auskunfts-, Berichtigungs- oder Löschrechte einräumen, sind diese durch diese
+  lokale Kontrolle erfüllt.
+</p>
+
+<h2>10. Änderungen</h2>
+<p>
+  Bei Änderungen werden Version und Datum oben auf dieser Seite aktualisiert; wesentliche
+  Änderungen werden zusätzlich in den Release Notes der App vermerkt.
+</p>
+
+<footer>
+  PlanB is built on open data. Weather by
+  <a href="https://open-meteo.com">Open-Meteo</a>; places, opening hours and geocoding
+  &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors;
+  routing by <a href="https://project-osrm.org/">OSRM</a>; Swiss transit by
+  <a href="https://transport.opendata.ch/">transport.opendata.ch</a>.
+</footer>
+
+</main>
+</body>
+</html>
